@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Generate Json File') {
             steps {
-            call(
+            generateJson(
                 credentials_file: "127.0.0.1 abd cef",
                 
             )
