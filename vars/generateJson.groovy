@@ -1,5 +1,5 @@
 def call(Map stageParams) {
- def cred=stageParams.credentials.file
+ def cred=stageParams.credentials_file
  String[] splitData = cred.split("\n");
  for (String eachSplit : splitData) {
  def line = "${eachSplit}".split()
