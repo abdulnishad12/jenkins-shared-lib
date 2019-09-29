@@ -11,7 +11,7 @@
         }
         stage('Print Json File') {
             steps {
-            api_json(
+            api_call(
                 api_json: 'api.json'
                 )
             }
