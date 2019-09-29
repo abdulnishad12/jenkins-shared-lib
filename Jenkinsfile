@@ -9,5 +9,7 @@
                 )
             }
         }
+     stage('print filename')
+     api_json:"${WORKSPACE}\\api.json"
     }
  }
