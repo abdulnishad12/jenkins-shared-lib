@@ -9,7 +9,6 @@
                 )
             }
         }
-    stages {
         stage('Print Json File') {
             steps {
             api_json(
@@ -17,4 +16,5 @@
                 )
             }
         }
+    }
  }
