@@ -10,6 +10,6 @@
             }
         }
      stage('print filename')
-     api_json:"${WORKSPACE}\\api.json"
+     api_json:"api.json"
     }
  }
