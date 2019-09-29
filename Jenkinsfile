@@ -9,9 +9,12 @@
                 )
             }
         }
-     stage('print filename'){
-      steps{
-    api_json( api_json:'api.json')
-      }
-    }
+    stages {
+        stage('Print Json File') {
+            steps {
+            api_json(
+                api_json: 'api.json'
+                )
+            }
+        }
  }
