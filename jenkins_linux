@@ -13,9 +13,10 @@ properties( [
     agent any
     stages {
     stage('Create User') {
+    steps{
     sh """ 
 ./sshwtuseradd.sh -u admin_credentials -s novelist -l output -e 
  """ 
-    }
+    }}
     }
     }
