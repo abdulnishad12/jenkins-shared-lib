@@ -1,0 +1,21 @@
+
+properties( [
+       parameters([
+               file(name:'./ssh_file',  description:'ssh file'),
+               file(name:'./admin_credentials',  description:'ssh file'),
+               file(name:'./novelist',  description:'ssh file')
+               
+       ])
+] )
+
+@Library('jenkins-shared-lib@master') _
+ pipeline {
+    agent any
+    stages {
+    stage('Create User') {
+    sh """ 
+./sshwtuseradd.sh -u admin_credentials -s novelist -l output -e 
+ """ 
+    }
+    }
+    }
