@@ -24,7 +24,7 @@ properties( [
             a=false
            }
            expression { return params.FORCE_FULL_BUILD }
-          }}}
+          }
             steps {
             generateJson(
                 credentials_file: "127.0.0.1 abd cef"
