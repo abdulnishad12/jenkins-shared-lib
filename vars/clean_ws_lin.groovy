@@ -1,3 +1,3 @@
 def call (Map stageParams){
-   sh label: '', script: 'rm -rf  inventory '
+   bat label: '', script: 'echo "hi"'
 }
