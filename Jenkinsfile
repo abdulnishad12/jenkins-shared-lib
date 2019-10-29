@@ -12,7 +12,7 @@ node('master'){
         }
         stage("Prepare ansible inventory for linux"){
             String fileContents = new File("${WORKSPACE}/input.json").getText('UTF-8')
-           def result = fileContents.findAll { it.contains('lin') }
+           def result = fileContents.findAll { it.contains('proxy') }
            print(result)
            
             }
