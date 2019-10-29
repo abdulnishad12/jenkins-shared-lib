@@ -11,7 +11,7 @@ node('master'){
             //env.cred_file = butler_input()
         }
         stage("Prepare ansible inventory for linux"){
-           String fileContents = new File('./input.json').getText('UTF-8')
+            String fileContents = new File("${WORKSPACE}/input.json").getText('UTF-8')
            def result = fileContents.findAll { it.contains('lin') }
            print(result)
            
