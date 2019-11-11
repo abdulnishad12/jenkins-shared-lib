@@ -1,4 +1,4 @@
-def call(Map stageParams) {
+def call() {
 def str = "123"
 return (str)
 }
