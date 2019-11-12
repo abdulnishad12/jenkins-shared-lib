@@ -1,5 +1,5 @@
 def call(Map stageParams) {
-   def str = api_call
+   String str = api_call
    print str
    print ("${str}")
 }
